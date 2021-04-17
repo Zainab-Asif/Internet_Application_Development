@@ -1,0 +1,72 @@
+<html>
+
+<head>
+  <title>Matrix_Calculator</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.0/math.js"
+    integrity="sha512-bd8Oth+p1rTn+/iUFHsSozuYn7JpmH59vMWe6L+M3huScB/SMTXWkQoME3Ytk0sbGJ40VGp2mO2b8K8FNrewfQ=="
+    crossorigin="anonymous"></script>
+
+</head>
+
+<style>
+  body {
+    background-image: url('./pexels-photo-1089438.jpeg');
+  }
+
+  /* Header/Logo Title */
+  .header {
+    padding: 20px;
+    text-align: center;
+    background: #1abc9c;
+    color: beige;
+    font-size: 25px;
+  }
+
+  /* Page Content */
+  .content {
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font-size: larger;
+  }
+
+  .button {
+    border: none;
+    color: black;
+    padding: 8px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+  }
+</style>
+
+<body>
+  <div>
+    <div class="header">
+      <h1>Matrix_Calculator</h1>
+    </div>
+    <br>
+    <div class="content">
+      <label for="nom">Enter Number of Matrices:</label>
+      <input type="number" min="1" max="2" name="" id="nom">
+      <br>
+      <br>
+      <button class="button" onclick="numOfMat()">ENTER</button>
+      <br>
+      <div>
+        <p id="mat"></p>
+        <p id="rowcol"></p>
+        <div id="vals"></div>
+        <div id="matopr"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="mat_cal.js"></script>
+
+</body>
+
+</html>
